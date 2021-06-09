@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+    <title>Student Accommodation</title>
+    <meta name="description" , content="Student Accommodation" />
+    <meta charset="utf-8" />
+    <meta name="robots" , content="index,follow" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1" />  
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./resources/css/stu_accom.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="bg-light justify-content-center navbar">
+      <h1>Student Accommodation</h1>
+    </nav>
+    
+    <section class="bg-light container ">
+        <div>
+            <button class="float-right btn-warning btn" id="logoutUser">
+              Logout
+            </button>
+          </div>       
+      <div class="card" style="margin-top: 2rem">
+        <h5 class="text-center card-header">Student Allocated Room</h5>
+        <input type="hidden" id="roomId"/>
+        <div class="card-body">
+          <form id="stu-room-form">
+            <div class="row">
+            <div class="form-group col">
+                <label for="reg-first-name">Room Type:</label>
+                <input
+                  type="text"
+                  name="stu-room-type"
+                  id="stu-room-type"
+                  class="form-control"
+                  required="true"
+                />
+              </div>
+              <div class="form-group col">
+                <label for="reg-last-name">Room Location:</label>
+                <input
+                  type="text"
+                  name="stu-room-location"
+                  id="stu-room-location"
+                  class="form-control"
+                  required="true"
+                />
+              </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="reg-first-name">Room Monthly Charge:</label>
+                    <input
+                      type="text"
+                      name="stu-room-charge"
+                      id="stu-room-charge"
+                      class="form-control"
+                      required="true"
+                    />
+                  </div>
+                  <div class="form-group col">
+                    <label for="reg-last-name">Payment Status:</label>
+                    <input
+                      type="text"
+                      name="stu-room-payment"
+                      id="stu-room-payment"
+                      class="form-control"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <button class="btn-secondary btn float-right" id="releaseRoom">Release Room</button>            
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
+    <script src="./resources/javascript/student-room.js"></script>   
+    <script type="text/javascript" src="./resources/javascript/common-functions.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>    
+  </footer>
+</html>

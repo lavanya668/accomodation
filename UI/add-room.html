@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+    <title>Student Accommodation</title>
+    <meta name="description" , content="Student Accommodation" />
+    <meta charset="utf-8" />
+    <meta name="robots" , content="index,follow" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1" />  
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./resources/css/stu_accom.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="bg-light justify-content-center navbar">
+      <h1>Student Accommodation</h1>
+    </nav>    
+    <section class="bg-light container ">       
+      <div class="card" style="margin-top: 2rem; width:30rem">       
+        <h5 class="text-center card-header">Add Room</h5>
+        <div class="card-body">
+          <form id="add-room-form">            
+            <div class="form-group ">
+                <label for="room-type">Room Type:</label>
+                <select
+                class="custom-select"
+                id="room-type"
+                name="room-type"
+                required="true"
+              >
+                <option selected>Choose...</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+              </select>
+              </div>
+              <div class="form-group ">
+                <label for="room-location">Room Location:</label>
+                <input
+                  type="text"
+                  name="room-location"
+                  id="room-location"
+                  class="form-control"
+                  required="true"
+                />
+              </div>
+            <div class="form-group">
+              <label for="room-monthly-charge">Room Monthly Charge:</label>
+              <input
+                type="text"
+                name="room-monthly-charge"
+                id="room-monthly-charge"
+                class="form-control"
+                required="true"
+              />
+          </div>
+            <button class="btn-primary btn" type="submit">Submit</button>
+            <a href="admin-home.html" class="btn-warning btn float-right">Cancel</button></a> 
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
+    <script src="./resources/javascript/add-room.js"></script>   
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>    
+  </footer>
+</html>

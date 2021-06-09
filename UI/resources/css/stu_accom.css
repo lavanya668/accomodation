@@ -1,0 +1,19 @@
+nav {
+  border-bottom: 2px solid #000000;
+}
+
+nav h1 {
+  color: #000000;
+  font-size: xx-large;
+}
+.card {
+  margin: 0 auto;
+}
+.heading {
+  text-align: center;
+}
+#welcomeString {
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+}
