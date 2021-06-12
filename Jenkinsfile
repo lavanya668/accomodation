@@ -1,24 +1,21 @@
-pipeline {
-    agent any
-    tools {
-        maven 'Maven 3.3.9'
-        jdk 'jdk8'
-    }
-    stages {
-        stage ('Initialize') {
-            steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
-            }
+pipeline{
+    agent{
+        Docker{
+        image "maven:3.6.0-jdk-13"
+        label "docker"
         }
-
-        stage ('Build') {
-            steps {
-                sh 'mvn clean package' 
+    }
+    stages{
+        stage("Build"){
+            steps{
+            sh "mvn -version"
+            sh "mvn clean install
             }
-            
+            }
+    }
+    post{
+        always{
+        cleanWs()
         }
     }
 }
